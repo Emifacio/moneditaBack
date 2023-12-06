@@ -14,7 +14,7 @@ import time
 #--------------------------------------------------------------------
 
 
-app = Flask(__name__)
+app = Flask(__moneditaBack__)
 CORS(app) # Esto habilitará CORS para todas las rutas
 
 
