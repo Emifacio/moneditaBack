@@ -10,14 +10,15 @@ const { createApp } = Vue
                 imagen:"",
                 stock:0,
                 precio:0,
-                url:'http://mcerda.pythonanywhere.com/productos/'+id,
+                url:'https://emifacio777.pythonanywhere.com/productos/'+id,
+                //url:'http://localhost:5000/productos/'+id,
                 }
         },
         methods: {
             fetchData(url) {
                 fetch(url)
                     .then(response => response.json())
-                        console.log(data)
+                .then( data =>{  console.log(data)
                         this.id=data.id
                         this.nombre = data.nombre;
                         this.imagen=data.imagen
