@@ -14,7 +14,7 @@ import time
 #--------------------------------------------------------------------
 
 
-app = Flask(__moneditaBack__)
+app = Flask(__name__)
 CORS(app) # Esto habilitará CORS para todas las rutas
 
 
@@ -121,11 +121,11 @@ class Catalogo:
 # Cuerpo del programa
 #--------------------------------------------------------------------
 # Crear una instancia de la clase Catalogo
-catalogo = Catalogo(host='localhost', user='root', password='', database='miapp')
+catalogo = Catalogo(host='emifacio777.mysql.pythonanywhere-services.com', user='emifacio777', password='qwe44qwe', database='emifacio777$moneditaBack')
 
 
 # Carpeta para guardar las imagenes
-ruta_destino = 'static/img/'
+ruta_destino = '/home/emifacio777/mysite/static/img'
 
 
 #--------------------------------------------------------------------
